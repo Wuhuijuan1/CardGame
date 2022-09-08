@@ -1,0 +1,791 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14A42D581D3FAACB7C707DD4 /* Pods_04_CardGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63A7907114131519BFE5BFBA /* Pods_04_CardGame.framework */; };
+		312933FA59B6B1C30BAED09D /* Pods_04_CardGame_04_CardGameUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B9017E4AB3BD154D28D25D /* Pods_04_CardGame_04_CardGameUITests.framework */; };
+		389C87E9B391F948AE22C6D5 /* Pods_04_CardGameTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32CA88EE27F7D40D44AEB8B8 /* Pods_04_CardGameTests.framework */; };
+		70399B0E276C1EBF000C737C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70399B0D276C1EBF000C737C /* AppDelegate.swift */; };
+		70399B10276C1EBF000C737C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70399B0F276C1EBF000C737C /* SceneDelegate.swift */; };
+		70399B17276C1EC2000C737C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70399B16276C1EC2000C737C /* Assets.xcassets */; };
+		70399B1A276C1EC2000C737C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70399B18276C1EC2000C737C /* LaunchScreen.storyboard */; };
+		70399B25276C1EC2000C737C /* _4_CardGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70399B24276C1EC2000C737C /* _4_CardGameTests.swift */; };
+		70399B2F276C1EC2000C737C /* _4_CardGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70399B2E276C1EC2000C737C /* _4_CardGameUITests.swift */; };
+		70399B31276C1EC2000C737C /* _4_CardGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70399B30276C1EC2000C737C /* _4_CardGameUITestsLaunchTests.swift */; };
+		70399B3E276C1FE1000C737C /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70399B3D276C1FE1000C737C /* Concentration.swift */; };
+		70399B40276C200F000C737C /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70399B3F276C200F000C737C /* Card.swift */; };
+		70B0F67328C81F290082238B /* GameModeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B0F67228C81F290082238B /* GameModeController.swift */; };
+		70B0F67528C820CB0082238B /* OperateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B0F67428C820CB0082238B /* OperateView.swift */; };
+		70B6C57928C73087004776F7 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B6C57828C73087004776F7 /* CardViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70399B21276C1EC2000C737C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70399B02276C1EBF000C737C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70399B09276C1EBF000C737C;
+			remoteInfo = "04 CardGame";
+		};
+		70399B2B276C1EC2000C737C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70399B02276C1EBF000C737C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70399B09276C1EBF000C737C;
+			remoteInfo = "04 CardGame";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1361A777510CF3BF0DAE6B14 /* Pods-04 CardGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-04 CardGame.release.xcconfig"; path = "Target Support Files/Pods-04 CardGame/Pods-04 CardGame.release.xcconfig"; sourceTree = "<group>"; };
+		32CA88EE27F7D40D44AEB8B8 /* Pods_04_CardGameTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_04_CardGameTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		405518F56877C19C493D2332 /* Pods-04 CardGame-04 CardGameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-04 CardGame-04 CardGameUITests.debug.xcconfig"; path = "Target Support Files/Pods-04 CardGame-04 CardGameUITests/Pods-04 CardGame-04 CardGameUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5E2F6FEFBCF60E2041E3E614 /* Pods-04 CardGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-04 CardGame.debug.xcconfig"; path = "Target Support Files/Pods-04 CardGame/Pods-04 CardGame.debug.xcconfig"; sourceTree = "<group>"; };
+		5EA9F81BA266F799621E8AB7 /* Pods-04 CardGame-04 CardGameUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-04 CardGame-04 CardGameUITests.release.xcconfig"; path = "Target Support Files/Pods-04 CardGame-04 CardGameUITests/Pods-04 CardGame-04 CardGameUITests.release.xcconfig"; sourceTree = "<group>"; };
+		63A7907114131519BFE5BFBA /* Pods_04_CardGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_04_CardGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70399B0A276C1EBF000C737C /* 04 CardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "04 CardGame.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70399B0D276C1EBF000C737C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		70399B0F276C1EBF000C737C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		70399B16276C1EC2000C737C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		70399B19276C1EC2000C737C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		70399B1B276C1EC2000C737C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70399B20276C1EC2000C737C /* 04 CardGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "04 CardGameTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70399B24276C1EC2000C737C /* _4_CardGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _4_CardGameTests.swift; sourceTree = "<group>"; };
+		70399B2A276C1EC2000C737C /* 04 CardGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "04 CardGameUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70399B2E276C1EC2000C737C /* _4_CardGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _4_CardGameUITests.swift; sourceTree = "<group>"; };
+		70399B30276C1EC2000C737C /* _4_CardGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _4_CardGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		70399B3D276C1FE1000C737C /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
+		70399B3F276C200F000C737C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		70B0F67228C81F290082238B /* GameModeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModeController.swift; sourceTree = "<group>"; };
+		70B0F67428C820CB0082238B /* OperateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperateView.swift; sourceTree = "<group>"; };
+		70B6C57828C73087004776F7 /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		7686239E208DD3B1A0E644DA /* Pods-04 CardGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-04 CardGameTests.debug.xcconfig"; path = "Target Support Files/Pods-04 CardGameTests/Pods-04 CardGameTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B1B9017E4AB3BD154D28D25D /* Pods_04_CardGame_04_CardGameUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_04_CardGame_04_CardGameUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F977B462590CD8444AC4017A /* Pods-04 CardGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-04 CardGameTests.release.xcconfig"; path = "Target Support Files/Pods-04 CardGameTests/Pods-04 CardGameTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70399B07276C1EBF000C737C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14A42D581D3FAACB7C707DD4 /* Pods_04_CardGame.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70399B1D276C1EC2000C737C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				389C87E9B391F948AE22C6D5 /* Pods_04_CardGameTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70399B27276C1EC2000C737C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				312933FA59B6B1C30BAED09D /* Pods_04_CardGame_04_CardGameUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33BF159303E6FFFF6938F590 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63A7907114131519BFE5BFBA /* Pods_04_CardGame.framework */,
+				B1B9017E4AB3BD154D28D25D /* Pods_04_CardGame_04_CardGameUITests.framework */,
+				32CA88EE27F7D40D44AEB8B8 /* Pods_04_CardGameTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70399B01276C1EBF000C737C = {
+			isa = PBXGroup;
+			children = (
+				70399B0C276C1EBF000C737C /* 04 CardGame */,
+				70399B23276C1EC2000C737C /* 04 CardGameTests */,
+				70399B2D276C1EC2000C737C /* 04 CardGameUITests */,
+				70399B0B276C1EBF000C737C /* Products */,
+				D3B3CA6A94BAD5A44A6CFD75 /* Pods */,
+				33BF159303E6FFFF6938F590 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		70399B0B276C1EBF000C737C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70399B0A276C1EBF000C737C /* 04 CardGame.app */,
+				70399B20276C1EC2000C737C /* 04 CardGameTests.xctest */,
+				70399B2A276C1EC2000C737C /* 04 CardGameUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70399B0C276C1EBF000C737C /* 04 CardGame */ = {
+			isa = PBXGroup;
+			children = (
+				70B6C57A28C731E8004776F7 /* Launch */,
+				70399B3D276C1FE1000C737C /* Concentration.swift */,
+				70399B3F276C200F000C737C /* Card.swift */,
+				70B0F67428C820CB0082238B /* OperateView.swift */,
+				70B0F67228C81F290082238B /* GameModeController.swift */,
+				70B6C57828C73087004776F7 /* CardViewController.swift */,
+				70399B1B276C1EC2000C737C /* Info.plist */,
+			);
+			path = "04 CardGame";
+			sourceTree = "<group>";
+		};
+		70399B23276C1EC2000C737C /* 04 CardGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				70399B24276C1EC2000C737C /* _4_CardGameTests.swift */,
+			);
+			path = "04 CardGameTests";
+			sourceTree = "<group>";
+		};
+		70399B2D276C1EC2000C737C /* 04 CardGameUITests */ = {
+			isa = PBXGroup;
+			children = (
+				70399B2E276C1EC2000C737C /* _4_CardGameUITests.swift */,
+				70399B30276C1EC2000C737C /* _4_CardGameUITestsLaunchTests.swift */,
+			);
+			path = "04 CardGameUITests";
+			sourceTree = "<group>";
+		};
+		70B6C57A28C731E8004776F7 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				70399B16276C1EC2000C737C /* Assets.xcassets */,
+				70399B18276C1EC2000C737C /* LaunchScreen.storyboard */,
+				70399B0D276C1EBF000C737C /* AppDelegate.swift */,
+				70399B0F276C1EBF000C737C /* SceneDelegate.swift */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		D3B3CA6A94BAD5A44A6CFD75 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E2F6FEFBCF60E2041E3E614 /* Pods-04 CardGame.debug.xcconfig */,
+				1361A777510CF3BF0DAE6B14 /* Pods-04 CardGame.release.xcconfig */,
+				405518F56877C19C493D2332 /* Pods-04 CardGame-04 CardGameUITests.debug.xcconfig */,
+				5EA9F81BA266F799621E8AB7 /* Pods-04 CardGame-04 CardGameUITests.release.xcconfig */,
+				7686239E208DD3B1A0E644DA /* Pods-04 CardGameTests.debug.xcconfig */,
+				F977B462590CD8444AC4017A /* Pods-04 CardGameTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70399B09276C1EBF000C737C /* 04 CardGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70399B34276C1EC2000C737C /* Build configuration list for PBXNativeTarget "04 CardGame" */;
+			buildPhases = (
+				24A1902C0E3631A1F389D194 /* [CP] Check Pods Manifest.lock */,
+				70399B06276C1EBF000C737C /* Sources */,
+				70399B07276C1EBF000C737C /* Frameworks */,
+				70399B08276C1EBF000C737C /* Resources */,
+				E3EB7A8FDC11BA8F1F676EE6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "04 CardGame";
+			productName = "04 CardGame";
+			productReference = 70399B0A276C1EBF000C737C /* 04 CardGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		70399B1F276C1EC2000C737C /* 04 CardGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70399B37276C1EC2000C737C /* Build configuration list for PBXNativeTarget "04 CardGameTests" */;
+			buildPhases = (
+				851E5BA0903267485E13AB64 /* [CP] Check Pods Manifest.lock */,
+				70399B1C276C1EC2000C737C /* Sources */,
+				70399B1D276C1EC2000C737C /* Frameworks */,
+				70399B1E276C1EC2000C737C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70399B22276C1EC2000C737C /* PBXTargetDependency */,
+			);
+			name = "04 CardGameTests";
+			productName = "04 CardGameTests";
+			productReference = 70399B20276C1EC2000C737C /* 04 CardGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		70399B29276C1EC2000C737C /* 04 CardGameUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70399B3A276C1EC2000C737C /* Build configuration list for PBXNativeTarget "04 CardGameUITests" */;
+			buildPhases = (
+				C811BD2502F2EE4D88286C36 /* [CP] Check Pods Manifest.lock */,
+				70399B26276C1EC2000C737C /* Sources */,
+				70399B27276C1EC2000C737C /* Frameworks */,
+				70399B28276C1EC2000C737C /* Resources */,
+				A7B567E156564EA533563CDD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70399B2C276C1EC2000C737C /* PBXTargetDependency */,
+			);
+			name = "04 CardGameUITests";
+			productName = "04 CardGameUITests";
+			productReference = 70399B2A276C1EC2000C737C /* 04 CardGameUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70399B02276C1EBF000C737C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					70399B09276C1EBF000C737C = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					70399B1F276C1EC2000C737C = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 70399B09276C1EBF000C737C;
+					};
+					70399B29276C1EC2000C737C = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 70399B09276C1EBF000C737C;
+					};
+				};
+			};
+			buildConfigurationList = 70399B05276C1EBF000C737C /* Build configuration list for PBXProject "04 CardGame" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 70399B01276C1EBF000C737C;
+			productRefGroup = 70399B0B276C1EBF000C737C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70399B09276C1EBF000C737C /* 04 CardGame */,
+				70399B1F276C1EC2000C737C /* 04 CardGameTests */,
+				70399B29276C1EC2000C737C /* 04 CardGameUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70399B08276C1EBF000C737C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70399B1A276C1EC2000C737C /* LaunchScreen.storyboard in Resources */,
+				70399B17276C1EC2000C737C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70399B1E276C1EC2000C737C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70399B28276C1EC2000C737C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24A1902C0E3631A1F389D194 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-04 CardGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		851E5BA0903267485E13AB64 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-04 CardGameTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7B567E156564EA533563CDD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-04 CardGame-04 CardGameUITests/Pods-04 CardGame-04 CardGameUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-04 CardGame-04 CardGameUITests/Pods-04 CardGame-04 CardGameUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-04 CardGame-04 CardGameUITests/Pods-04 CardGame-04 CardGameUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C811BD2502F2EE4D88286C36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-04 CardGame-04 CardGameUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3EB7A8FDC11BA8F1F676EE6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-04 CardGame/Pods-04 CardGame-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-04 CardGame/Pods-04 CardGame-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-04 CardGame/Pods-04 CardGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70399B06276C1EBF000C737C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70399B3E276C1FE1000C737C /* Concentration.swift in Sources */,
+				70B6C57928C73087004776F7 /* CardViewController.swift in Sources */,
+				70399B0E276C1EBF000C737C /* AppDelegate.swift in Sources */,
+				70B0F67328C81F290082238B /* GameModeController.swift in Sources */,
+				70399B40276C200F000C737C /* Card.swift in Sources */,
+				70B0F67528C820CB0082238B /* OperateView.swift in Sources */,
+				70399B10276C1EBF000C737C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70399B1C276C1EC2000C737C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70399B25276C1EC2000C737C /* _4_CardGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70399B26276C1EC2000C737C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70399B2F276C1EC2000C737C /* _4_CardGameUITests.swift in Sources */,
+				70399B31276C1EC2000C737C /* _4_CardGameUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70399B22276C1EC2000C737C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70399B09276C1EBF000C737C /* 04 CardGame */;
+			targetProxy = 70399B21276C1EC2000C737C /* PBXContainerItemProxy */;
+		};
+		70399B2C276C1EC2000C737C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70399B09276C1EBF000C737C /* 04 CardGame */;
+			targetProxy = 70399B2B276C1EC2000C737C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		70399B18276C1EC2000C737C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70399B19276C1EC2000C737C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		70399B32276C1EC2000C737C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		70399B33276C1EC2000C737C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		70399B35276C1EC2000C737C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E2F6FEFBCF60E2041E3E614 /* Pods-04 CardGame.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AC376MY52H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "04 CardGame/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wuhuijuan.-4-CardGame";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		70399B36276C1EC2000C737C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1361A777510CF3BF0DAE6B14 /* Pods-04 CardGame.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AC376MY52H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "04 CardGame/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wuhuijuan.-4-CardGame";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		70399B38276C1EC2000C737C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7686239E208DD3B1A0E644DA /* Pods-04 CardGameTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wuhuijuan.-4-CardGameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/04 CardGame.app/04 CardGame";
+			};
+			name = Debug;
+		};
+		70399B39276C1EC2000C737C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F977B462590CD8444AC4017A /* Pods-04 CardGameTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wuhuijuan.-4-CardGameTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/04 CardGame.app/04 CardGame";
+			};
+			name = Release;
+		};
+		70399B3B276C1EC2000C737C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 405518F56877C19C493D2332 /* Pods-04 CardGame-04 CardGameUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wuhuijuan.-4-CardGameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "04 CardGame";
+			};
+			name = Debug;
+		};
+		70399B3C276C1EC2000C737C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EA9F81BA266F799621E8AB7 /* Pods-04 CardGame-04 CardGameUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wuhuijuan.-4-CardGameUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "04 CardGame";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70399B05276C1EBF000C737C /* Build configuration list for PBXProject "04 CardGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70399B32276C1EC2000C737C /* Debug */,
+				70399B33276C1EC2000C737C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70399B34276C1EC2000C737C /* Build configuration list for PBXNativeTarget "04 CardGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70399B35276C1EC2000C737C /* Debug */,
+				70399B36276C1EC2000C737C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70399B37276C1EC2000C737C /* Build configuration list for PBXNativeTarget "04 CardGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70399B38276C1EC2000C737C /* Debug */,
+				70399B39276C1EC2000C737C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70399B3A276C1EC2000C737C /* Build configuration list for PBXNativeTarget "04 CardGameUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70399B3B276C1EC2000C737C /* Debug */,
+				70399B3C276C1EC2000C737C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 70399B02276C1EBF000C737C /* Project object */;
+}

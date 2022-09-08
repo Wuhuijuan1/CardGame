@@ -1,0 +1,6 @@
+framework module Pods_04_CardGame_04_CardGameUITests {
+  umbrella header "Pods-04 CardGame-04 CardGameUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
