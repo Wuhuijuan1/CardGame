@@ -6,7 +6,11 @@
 //
 
 import UIKit
-
+/*
+    数据处理中心
+ cards: 当前游戏页面的所有卡牌
+ OnlyOneFaceUpIndex：当前是否只有一张卡牌是翻面的
+ */
 class Concentration {
     var cards = [Card]()
     var OnlyOneFaceUpIndex : Int?

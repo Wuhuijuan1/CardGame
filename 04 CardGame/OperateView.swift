@@ -10,6 +10,22 @@ import UIKit
 import RxCocoa
 import RxSwift
 
+enum GameMode: Int {
+    case easy = 1, middle, hard, hell
+    var arrangement: (UInt, UInt) {
+        switch self {
+        case .easy:
+            return (4, 3)
+        case .middle:
+            return (5, 4)
+        case .hard:
+            return (6, 5)
+        case .hell:
+            return (8, 7)
+        }
+    }
+}
+
 class OperateView: UIView {
     lazy private var buttonArr = [easyButton, middleButton, hardButton, hellButton]
     private var easyButton = UIButton()

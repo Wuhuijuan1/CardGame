@@ -7,6 +7,13 @@
 
 import Foundation
 
+/**
+    卡片模型
+ isFaceUp：是否翻面状态
+ isMatched：是否匹配状态
+ isFade：是否处于消失状态
+ identifier：卡片的图像，或者说卡片的标识
+ */
 struct Card {
     var isFaceUp = false
     var isMatched = false

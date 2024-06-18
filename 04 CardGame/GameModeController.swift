@@ -48,21 +48,20 @@ class GameModeController: UIViewController {
     private func bindViewModel() {
         operateView.modeDidSelectedSubject.subscribe { [weak self] tag in
             guard let index = tag.element, let self = self else { return }
-            var arrangement: (UInt, UInt) = (0, 0)
+            var gameMode: GameMode
             switch index {
             case 10:
-                arrangement = (4, 3)
+                gameMode = .easy
             case 20:
-                arrangement = (4, 4)
+                gameMode = .middle
             case 30:
-                arrangement = (5, 4)
+                gameMode = .hard
             case 40:
-                arrangement = (6, 5)
+                gameMode = .hell
             default:
                 return
             }
-            let cardVC = CardViewController()
-            cardVC.arrangement = arrangement
+            let cardVC = CardViewController(mode: gameMode)
             self.navigationController?.pushViewController(cardVC, animated: true)
         }
         .disposed(by: disposBag)

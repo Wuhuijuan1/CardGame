@@ -22,11 +22,21 @@ class CardViewController: UIViewController {
     var emoji = [Int : String]()
     private var game = Concentration(1)
     // 第一个参数表示行，第二个参数表示列
-    var arrangement: (UInt, UInt) = (0, 0) {
+    var mode: GameMode {
         didSet {
             updateUI()
         }
     }
+
+    init(mode: GameMode) {
+        self.mode = mode
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadNavigation()
@@ -102,12 +112,12 @@ extension CardViewController {
             make.edges.equalToSuperview()
         }
         var stackArr: [UIStackView] = []
-        for i in 0..<arrangement.0 {
+        for i in 0..<mode.arrangement.0 {
             var buttonArr: [UIButton] = []
-            for idx in 0..<arrangement.1 {
+            for idx in 0..<mode.arrangement.1 {
                 let button = UIButton()
                 button.backgroundColor = bacColor
-                button.tag = Int(i * arrangement.1 + idx)
+                button.tag = Int(i * mode.arrangement.1 + idx)
                 button.addTarget(self, action: #selector(cardDidClicked(_:)), for: .touchUpInside)
                 buttonArr.append(button)
                 self.buttonArray.append(button)
@@ -174,15 +184,23 @@ extension CardViewController {
         if isAllFade {
             timer?.invalidate()
             timer = nil
-            let alert = UIAlertController(title:  "Congratulation!", message: "通关完成！用时: " + (timeItem.title ?? "00:00"), preferredStyle: .alert)
-            let quit = UIAlertAction(title: "退出", style: .default) { [weak self] _ in
+            let alert = UIAlertController(title:  "Congratulation!", message: "Clearance completed in " + (timeItem.title ?? "00:00"), preferredStyle: .alert)
+            let quit = UIAlertAction(title: "Exit", style: .default) { [weak self] _ in
                 self?.navigationController?.popViewController(animated: true)
             }
-            let again = UIAlertAction(title: "重来", style: .default) { [weak self] _ in
+            let again = UIAlertAction(title: "Restart", style: .default) { [weak self] _ in
                 self?.updateUI()
+            }
+            let nextLavel = UIAlertAction(title: "Next Stage", style: .default) { [weak self] _ in
+                guard let rawValue = self?.mode.rawValue else { return }
+                let mode = GameMode(rawValue: rawValue + 1)
+                if let mode {
+                    self?.mode = mode
+                }
             }
             alert.addAction(quit)
             alert.addAction(again)
+            alert.addAction(nextLavel)
             self.present(alert, animated: true)
         }
     }
